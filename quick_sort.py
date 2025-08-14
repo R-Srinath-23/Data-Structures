@@ -10,8 +10,8 @@ def quick_sort(arr):
             lift_arr.append(arr[i])
         else:
             right_arr.append(arr[i])
-    print(lift_arr+[p]+right_arr)
+    
     return quick_sort(lift_arr)+[p]+quick_sort(right_arr)
     
-ls=[1, 3, 4, 2, 1] 
+ls=[1, 3, 4, 2, 1]
 quick_sort(ls)
